@@ -82,7 +82,7 @@ animation-delay: 2s,3s;
 .home-content h3 span{
     color: #0ef;
 }
-.home-content h1, .title h2{
+.home-content h1{
     font-size: 56px;
     font-weight: 700;
     margin: -7px 0;
@@ -169,7 +169,7 @@ display: flex;
 justify-content: flex-start;
 font-weight: 700;
 position: relative;
-font-size: 1.3rem;
+font-size: 1rem;
 }
 .skillz .item-text span:last-child{
     position: absolute;
@@ -196,6 +196,8 @@ font-size: 1.3rem;
     margin-left: 63%;
 }
 .title h2{
+    font-size: 56px;
+    font-weight: 700;
     text-align: center !important;
     margin-bottom: 20px;
     color: #0ef;
@@ -203,9 +205,6 @@ font-size: 1.3rem;
 
 }
 .text{
-    opacity: 0;
-    animation: slideLeft 1s ease forwards;
-    animation-delay: 1.5s;
     letter-spacing: 2px;
 }
 .skillz h2{
@@ -252,7 +251,7 @@ font-size: 1.3rem;
     display: grid;
     grid-template-columns: repeat(2,1fr);
     grid-gap: 2rem;
-    padding: 0 4rem;
+    padding: 0 3rem;
 }
 @keyframes slideRight{
     0%{
