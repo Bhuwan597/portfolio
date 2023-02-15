@@ -49,7 +49,7 @@ animation-delay: calc(.1s * var(--i));
 }
 .home{
     position: relative;
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     display: flex;
     justify-content: space-between;
@@ -217,7 +217,9 @@ animation-delay: 2s,3s;
         width: 400px;
     }
     .home{
-        margin-top: 20vh;
+        margin-top: 5vh;
+        flex-direction: column;
+        height: auto;
     }
     .navbar a{
         margin-left: 15px;
