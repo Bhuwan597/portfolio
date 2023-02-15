@@ -7,6 +7,8 @@
 }
 body{
     background-color: #1f242d;
+    color: #fff;
+    overflow-x: hidden;
 }
 .header{
     position: fixed;
@@ -47,6 +49,10 @@ animation-delay: calc(.1s * var(--i));
 {
     color: #0ef;
 }
+.title-color{
+    color: #0ef;
+
+}
 .home{
     position: relative;
     width: 100vw;
@@ -76,7 +82,7 @@ animation-delay: 2s,3s;
 .home-content h3 span{
     color: #0ef;
 }
-.home-content h1{
+.home-content h1, .title h2{
     font-size: 56px;
     font-weight: 700;
     margin: -7px 0;
@@ -145,6 +151,108 @@ animation-delay: 2s,3s;
     font-weight: 700!important;
 
 
+}
+.skillz>.text{
+    width: 70%;
+    margin: 1.5rem auto;
+    text-align: center;
+}
+.skillz .row{
+    margin: 1rem 0;
+}
+.skillz .item{
+    padding: 0.5rem 0;
+    margin: 0.3rem 0;
+}
+.skillz .item-text{
+display: flex;
+justify-content: flex-start;
+font-weight: 700;
+position: relative;
+font-size: 1.3rem;
+}
+.skillz .item-text span:last-child{
+    position: absolute;
+}
+.skillz .item-text .w-90{
+    margin-left: 85%;
+}
+.skillz .item-text .w-75{
+    margin-left: 70%;
+}
+.skillz .item-text .w-85{
+    margin-left: 80%;
+}
+.skillz .item-text .w-80{
+    margin-left: 75%;
+}
+.skillz .item-text .w-70{
+    margin-left: 65%;
+}
+.skillz .item-text .w-60{
+    margin-left: 55%;
+}
+.skillz .item-text .w-68{
+    margin-left: 63%;
+}
+.title h2{
+    text-align: center !important;
+    margin-bottom: 20px;
+    color: #0ef;
+    letter-spacing: 5px;
+
+}
+.text{
+    opacity: 0;
+    animation: slideLeft 1s ease forwards;
+    animation-delay: 1.5s;
+    letter-spacing: 2px;
+}
+.skillz h2{
+    text-align: left;
+    margin-left: 2rem;
+}
+.progress{
+    margin: 0.8rem 0;
+    border-radius: 10px;
+    height: 16px;
+    width: 100%;
+    background-color: #111318;
+    overflow: hidden;
+}
+.progress-bar{
+    background: #0ef;
+    height: 100%;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+}
+.progress-bar.w-90{
+    width: 90%;
+}
+.progress-bar.w-70{
+    width: 70%;
+}
+.progress-bar.w-75{
+    width: 75%;
+}
+.progress-bar.w-85{
+    width: 85%;
+}
+.progress-bar.w-80{
+    width: 80%;
+}
+.progress-bar.w-68{
+    width: 68%;
+}
+.progress-bar.w-60{
+    width: 60%;
+}
+
+.skillz .row{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 2rem;
+    padding: 0 4rem;
 }
 @keyframes slideRight{
     0%{
