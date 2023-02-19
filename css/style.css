@@ -53,6 +53,10 @@ animation-delay: calc(.1s * var(--i));
     color: #0ef;
 
 }
+.active{
+    color: #0ef;
+
+}
 .home{
     position: relative;
     width: 100vw;
@@ -64,10 +68,11 @@ animation-delay: calc(.1s * var(--i));
     color: #fff;
 }
 .home-img img{
-width: 500px;
+width: 440px;
 opacity: 0;
 animation: zoomIn 1s ease forwards, floatImage 4s ease-in-out infinite;
 animation-delay: 2s,3s;
+border-bottom: 6px solid black;
 }
 .home-content{
     max-width: 600px;
@@ -98,6 +103,7 @@ animation-delay: 2s,3s;
 }
 .home-content p{
     font-size:  1rem;
+    text-align: justify;
     letter-spacing: 2px;
     opacity: 0;
     animation: slideLeft 1s ease forwards;
@@ -118,16 +124,15 @@ animation-delay: 2s,3s;
     margin: 30px 10px 30px 0;
     font-weight: 700;
     transition: .5s ease;
-    opacity: 0;
-    animation: slideLeft 1s ease forwards;
-    animation-delay: calc(.2s * var(--i));
 }
 .social-media a:hover{
     background-color: #0ef;
+    transform: scale(1.3);
     color: #1f242d;
     box-shadow: 0 0 20px #0ef;
 }
 .btn{
+    margin-top: 20px;
     display: inline-block;
     padding: 12px 28px;
     background-color: #0ef;
@@ -141,6 +146,18 @@ animation-delay: 2s,3s;
     opacity: 0;
     animation: slideTop 1s ease forwards;
     animation-delay: calc(2s);
+}
+.btn-2{
+    display: inline-block;
+    padding: 12px 28px;
+    background-color: #0ef;
+    border-radius: 40px;
+    box-shadow: 0 0 10px #0ef;
+    font-size: 16px;
+    color: #1f242d;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 600;
 }
 .hire-me{
     color: #1f242d!important;
@@ -202,7 +219,6 @@ font-size: 1rem;
     margin-bottom: 20px;
     color: #0ef;
     letter-spacing: 5px;
-
 }
 .text{
     letter-spacing: 2px;
@@ -252,6 +268,102 @@ font-size: 1rem;
     grid-template-columns: repeat(2,1fr);
     grid-gap: 2rem;
     padding: 0 3rem;
+}
+.contact-me{
+    width: 100%;
+    height: 290px;
+    background-color: #111318;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.contact-me p{
+    color: #fff;
+    font-size: 30px;
+    font-weight: 800;
+    margin-bottom: 25px;
+}
+.btn-2:hover{
+   background-color: #fff;
+    cursor: pointer;
+}
+
+footer{
+    position: relative;
+    width: 100%;
+    height: 350px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+footer p:nth-child(1){
+    font-size: 30px;
+    color: #fff;
+    margin-bottom: 20px;
+    font-weight: 800;
+
+}
+footer p:nth-child(2){
+    font-size: 18px;
+    color: #fff;
+    text-align: center;
+    line-height: 26px;
+    width: 500px;
+    font-weight: 800;
+
+}
+.end{
+    position: absolute;
+    color: #0ef;
+    bottom: 35px;
+    font-size: 14px;
+}
+.about-section{
+    width: 100%;
+    padding: 100px 0px;
+    background-color: #111318;
+    margin-bottom: 30px;
+}
+.about-section img{
+    height: auto;
+    width: 450px;
+    margin: 0px 20px;
+    border-radius: 59px
+
+}
+.about-text{
+    width: 550px;
+}
+.main-about{
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.about-text h2{
+    color: #fff;
+    font-size: 75px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+.about-text h5{
+    letter-spacing: 2px;
+    font-size: 22px;
+    text-transform: capitalize;
+}
+.about-text p{
+    margin-top: 10px;
+    color: #fff;
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 18px;
+    margin-bottom: 45px;
+    text-align: justify;
 }
 @keyframes slideRight{
     0%{
@@ -321,7 +433,7 @@ font-size: 1rem;
       display: none!important;
     }
     .home-img img{
-        width: 400px;
+        width: 300px;
     }
     .home{
         margin-top: 5vh;
@@ -340,4 +452,56 @@ font-size: 1rem;
     .navbar a{
         font-size: 16px;
     }
+    .main-about{
+      flex-direction: column-reverse;
+      width: 100%;
+    }
+    .about-text h2{
+       font-size: 60px;
+    }
+    .about-text h5{
+        padding: 5px;
+    }
+    .about-text p{
+        text-align: center;
+        padding: 10px;
+    }
+    .about-text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .contact-me p{
+        text-align: center;
+    }
+  footer{
+    height: auto;
   }
+  .end{
+    bottom: 0px;
+}
+    footer p{
+        text-align: center;
+        padding: 10px;
+    }
+
+  }
+  .about-text{
+    width: 100%;
+  }
+.about-section img{
+    margin-top: 20px;
+    padding: 20px;
+    width: 300px;
+    opacity: 0;
+    animation: zoomIn 1s ease forwards, floatImage 4s ease-in-out infinite;
+    border-bottom: 6px solid black;
+}
+footer{
+    padding: 10px;
+}
+footer p:nth-child(2) {
+    width: 100%;
+}
