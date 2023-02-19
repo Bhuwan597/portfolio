@@ -486,7 +486,9 @@ footer p:nth-child(2){
         text-align: center;
         padding: 10px;
     }
-
+    .skillz .row{
+        grid-template-columns: repeat(1,1fr);
+    }
   }
   .about-text{
     width: 100%;
