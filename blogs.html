@@ -7,17 +7,16 @@
         <title>Bhuwan Acharya | Portfolio  Website</title>
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
         <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
         <meta property="og:url" content=https://bhuwan597.github.io/portfolio/>
         <meta property="og:description"
             content="I am an experienced web developer with over three years of expertise in the web development field. I am knowledgeable in HTML, CSS, JavaScript, PHP, AJAX, Python, and Django." />
-        <meta property="og:image" content="https://bhuwan597.github.io/portfolio/images/bhuwan.jpg" />
-        <link rel="icon" href="./images/favicon.ico" sizes="any"><!-- 32×32 -->
-        <link rel="apple-touch-icon" href="./images/apple-touch-icon.png">
-        <link rel="icon" sizes="32x32" href="./images/favicon-32x32.png">
-        <link rel="icon" sizes="192x192" href="./images/android-chrome-192x192.png">
-        <link rel="icon" sizes="512x512" href="./images/android-chrome-512x512.png">
-        <link rel="manifest" href="./images/manifest.webmanifest">
+            <meta property="og:image" content="https://bhuwan597.github.io/portfolio/images/bhuwan.jpg" />
+            <link rel="icon" href="./images/favicon.ico" sizes="any"><!-- 32×32 -->
+            <link rel="apple-touch-icon" href="./images/apple-touch-icon.png">
+            <link rel="icon" sizes="32x32" href="./images/favicon-32x32.png">
+            <link rel="icon" sizes="192x192" href="./images/android-chrome-192x192.png">
+            <link rel="icon" sizes="512x512" href="./images/android-chrome-512x512.png">
+            <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
         </head>
 <body>
     <header class="header">
@@ -30,13 +29,22 @@
             <a href="https://wa.me/+9779821669048" class="hire-me" style="--i:5">Hire Me</a>
         </nav>
     </header>
-    <section class="home">
+    <section class="project-home">
         <div class="home-content">
-            <h3>No Blogs Available.</h3>
-            <a  href="index.html" class="btn">Return</a>
+            <h3>Checkout the Recent Blogs.</h3>
         </div>
-        <div class="home-img">
-            <img src="./images/main.png" alt="Bhuwan Acharya Upadhyaya" >
+    </section>
+    <section class="projects">
+        <div class="project-item">
+            <img data-aos="fade-in" class="project-img" src="./images/SEO.png" alt="">
+            <div class="project-info">
+                <h2 data-aos="slide-down" class="project-title">SEO Full Course - By Bhuwan
+                </h2>
+                <p data-aos="slide-up" class="project-description">My SEO course is a comprehensive, step-by-step program for anyone looking to learn more about search engine optimization. Throughout the course, I provide an in-depth look at each stage of the SEO process, from keyword research and content optimization to link building and competitive analysis. With an emphasis on practical advice, My course is designed to help learners understand the importance of SEO and how to use it to increase their website's visibility and search engine rankings. I also provides helpful tips and tricks on how to get the most out of SEO campaigns, as well as advice on how to avoid common mistakes and pitfalls. By the end of the course, learners will have an improved understanding of SEO and how to incorporate it into their digital marketing strategies. </p>
+                <p data-aos="fade-up" class="project-date">2079 - 11 - 08</p>
+                <a data-aos="fade-up" download target="_blank" href="./downloadable/SEO-By Bhuwan.pdf" class="btn-2">Download Course</a>
+                <br><br>
+            </div>
         </div>
     </section>
     <footer>
@@ -48,8 +56,12 @@
         </div> 
         <p>CopyRight &copy; By Bhuwan Acharya 2022 </p>
     </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-    <script src="js/index.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset: 100,
+        duration: 500,
+      });
+    </script>
 </body>
 </html>
